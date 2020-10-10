@@ -1,0 +1,9 @@
+<div class="card-container" *ngFor="let mission of missionDetails">
+  <app-card
+    [image]="mission.image"
+    [name]="mission.missionName"
+    [missionId]="mission.missionId"
+    [launchYear]="mission.launchYear"
+    [launchSuccess]="mission.launchSuccess"
+  ></app-card>
+</div>

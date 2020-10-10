@@ -1,0 +1,24 @@
+.example-card {
+  max-width: 200px;
+  background-color: white;
+  color: black;
+  border: none;
+  height: 400px;
+}
+.thumbnail {
+  margin: 0px 10px 20px 0px;
+}
+.mat-card-header .mat-card-title {
+  font-size: 15px;
+}
+.imagediv {
+  width: 180px;
+  height: 200px;
+  border: 1px solid black;
+}
+.mat-card-title {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: left;
+  margin-bottom: 15px;
+}
