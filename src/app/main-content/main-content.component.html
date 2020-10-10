@@ -1,9 +1,12 @@
-<div class="card-container" *ngFor="let mission of missionDetails">
+<div class="flex-card-container">
+<div class="card-container" *ngFor="let mission of missionDetails; let i = index;">
   <app-card
     [image]="mission.image"
     [name]="mission.missionName"
     [missionId]="mission.missionId"
     [launchYear]="mission.launchYear"
     [launchSuccess]="mission.launchSuccess"
+    [index]="i"
   ></app-card>
+</div>
 </div>

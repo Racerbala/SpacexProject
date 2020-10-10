@@ -1,3 +1,20 @@
 .card-container {
-  width: 300px;
+  width: 100%;
+  flex: 25%;
+}
+
+.flex-card-container {
+  display: flex;
+  padding: 5px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 700px) {
+  .flex-card-container {
+    flex-direction: column;
+  }
+  .card-container {
+    flex: 100%;
+  }
 }

@@ -11,7 +11,8 @@ export class CardComponent implements OnInit {
   @Input() image: string;
   @Input() missionId: string[];
   @Input() launchSuccess: boolean;
-  splitId: string;
+  @Input() index: any;
+  splitId: string; 
   constructor() {}
 
   ngOnInit(): void {

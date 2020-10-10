@@ -1,23 +1,18 @@
 <div class="heading">Filters</div>
 <div class="sub-heading">Launch Year</div>
 
-<div class="flex-container">
-  <button class="button">2006</button>
-  <button class="button">2006</button>
-  <button class="button">2006</button>
-  <button class="button">2006</button>
-  <button class="button">2006</button>
-  <button class="button">2006</button>
-  <button class="button">2006</button>
-  <button class="button">2006</button>
+<div *ngFor="let year of yearsList">
+  <div >
+    <button class="button" (click)="setYear(year)">{{year}}</button>
+  </div>
 </div>
 <div class="sub-heading">Successful Launch</div>
-<div class="flex-container">
-  <button class="button">True</button>
-  <button class="button">False</button>
+<div >
+  <button class="button" (click)="setLaunchStatus(true)">True</button>
+  <button class="button"(click)="setLaunchStatus(false)">False</button>
 </div>
 <div class="sub-heading">Successful Landing</div>
-<div class="flex-container">
-  <button class="button">True</button>
-  <button class="button">False</button>
+<div>
+  <button class="button" (click)="setLandStatus(true)">True</button>
+  <button class="button" (click)="setLandStatus(false)">False</button>
 </div>

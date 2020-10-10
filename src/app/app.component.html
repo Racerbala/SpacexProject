@@ -3,10 +3,12 @@
 
   <div class="flex-container">
     <div class="flex-item-left">
-      <app-side-nav></app-side-nav>
+      <app-side-nav [yearsList]="yearsList" (filterData)="getDataByFilter($event)"></app-side-nav>
     </div>
     <div class="flex-item-right">
-      <app-main-content></app-main-content>
+      
+        <app-main-content [missionDetails]="missionDetails"></app-main-content>
+
     </div>
   </div>
 </div>

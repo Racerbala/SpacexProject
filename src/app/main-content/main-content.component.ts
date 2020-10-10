@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { LaunchService } from '../services/launch.service';
 
 @Component({
@@ -6,13 +6,7 @@ import { LaunchService } from '../services/launch.service';
   templateUrl: './main-content.component.html',
   styleUrls: ['./main-content.component.css'],
 })
-export class MainContentComponent implements OnInit {
-  constructor(private launchService: LaunchService) {}
-  missionDetails: any[];
-  ngOnInit(): void {
-    this.launchService.getAllLaunches().subscribe((data) => {
-      this.missionDetails = data;
-      console.log(this.missionDetails);
-    });
-  }
+export class MainContentComponent {
+  constructor() {}
+  @Input() missionDetails: any[];
 }
