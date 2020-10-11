@@ -1,21 +1,25 @@
 <div class="thumbnail">
   <mat-card class="example-card">
     <div class="card-image">
-      <img src="image"  alt="Photo of a {{name}}">
+      <img src="{{ image }}" alt="Photo of a {{ name }}" />
     </div>
     <mat-card-content>
-      <div class="heading">{{name}}&nbsp;#{{index}}</div>
+      <div class="heading">{{ name }}&nbsp;#{{ index }}</div>
       <div class="sub-heading">
-        <span class="list-item" >Mission Ids:</span>
+        <span class="list-item">Mission Ids:</span>
         <span>{{ missionId }}</span>
       </div>
       <div class="sub-heading">
-        <span  class="list-item"> Launch Year: </span>
+        <span class="list-item"> Launch Year: </span>
         <span> {{ launchYear }}</span>
       </div>
       <div class="sub-heading">
-        <span  class="list-item"> Launch Success: </span>
+        <span class="list-item"> Launch Success: </span>
         <span> {{ launchSuccess }}</span>
+      </div>
+      <div class="sub-heading">
+        <span class="list-item"> Land Success: </span>
+        <span> {{ landSuccess }}</span>
       </div>
     </mat-card-content>
   </mat-card>

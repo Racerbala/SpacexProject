@@ -11,6 +11,7 @@ export class CardComponent implements OnInit {
   @Input() image: string;
   @Input() missionId: string[];
   @Input() launchSuccess: boolean;
+  @Input() landSuccess: boolean;
   @Input() index: any;
   splitId: string; 
   constructor() {}

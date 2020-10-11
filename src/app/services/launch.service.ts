@@ -32,6 +32,7 @@ export class LaunchService {
             missionId: el.mission_id.join(),
             launchYear: el.launch_year,
             launchSuccess: el.launch_success,
+            landSuccess: el.rocket.first_stage.cores[0].land_success
           };
         });
         return data;

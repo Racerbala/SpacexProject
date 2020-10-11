@@ -12,6 +12,7 @@ import { CardComponent } from './card/card.component';
 import { LaunchService } from './services/launch.service';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CustomBreakPointsProvider } from './custom-breakpoint';
 
 @NgModule({
   declarations: [
@@ -29,8 +30,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     FlexLayoutModule,
   ],
-  providers: [LaunchService],
+  providers: [LaunchService, CustomBreakPointsProvider],
   bootstrap: [AppComponent],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+  schemas: [CUSTOM_ELEMENTS_SCHEMA] 
 })
 export class AppModule {}
