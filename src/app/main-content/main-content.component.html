@@ -1,12 +1,15 @@
-<div class="flex-card-container">
-<div class="card-container" *ngFor="let mission of missionDetails; let i = index;">
-  <app-card
-    [image]="mission.image"
-    [name]="mission.missionName"
-    [missionId]="mission.missionId"
-    [launchYear]="mission.launchYear"
-    [launchSuccess]="mission.launchSuccess"
-    [index]="i"
-  ></app-card>
-</div>
+<div fxLayout="row wrap" fxLayoutGap="16px grid">
+<!-- <div fxFlex="100%" fxFlex.md="33%" fxFlex.sm="50%" class="flex-card-container"> -->
+  <!-- <div class="count">{{missionDetails.length}}</div> -->
+  <div class="card-container" fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" *ngFor="let mission of missionDetails; let i = index;">
+    <app-card
+      [image]="mission.image"
+      [name]="mission.missionName"
+      [missionId]="mission.missionId"
+      [launchYear]="mission.launchYear"
+      [launchSuccess]="mission.launchSuccess"
+      [index]="i"
+    ></app-card>
+  </div>
+
 </div>

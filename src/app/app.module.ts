@@ -11,6 +11,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { CardComponent } from './card/card.component';
 import { LaunchService } from './services/launch.service';
 import { MatCardModule } from '@angular/material/card';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatCardModule,
+    FlexLayoutModule,
   ],
   providers: [LaunchService],
   bootstrap: [AppComponent],

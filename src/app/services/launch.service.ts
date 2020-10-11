@@ -12,7 +12,7 @@ export class LaunchService {
   constructor(private http: HttpClient) {}
 
   getAllLaunches(): Observable<any> {
-    const url: string = `${environment.api_url}/launches?limit=100`;
+    const url: string = `${environment.api_url}/launches?limit=200`;
     return this.getData(url);
   }
 
