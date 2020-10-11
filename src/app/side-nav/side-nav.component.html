@@ -1,18 +1,58 @@
-<div class="heading">Filters</div>
-<div class="sub-heading">Launch Year</div>
-
-<div *ngFor="let year of yearsList">
-  <div >
-    <button class="button" (click)="setYear(year)">{{year}}</button>
+<section>
+  <div>
+    <div class="heading">Filters</div>
+    <div class="sub-heading">Launch Year</div>
   </div>
-</div>
-<div class="sub-heading">Successful Launch</div>
-<div >
-  <button class="button" (click)="setLaunchStatus(true)">True</button>
-  <button class="button"(click)="setLaunchStatus(false)">False</button>
-</div>
-<div class="sub-heading">Successful Landing</div>
-<div>
-  <button class="button" (click)="setLandStatus(true)">True</button>
-  <button class="button" (click)="setLandStatus(false)">False</button>
-</div>
+  <div fxLayout="row wrap" fxLayoutGap="5px grid">
+    <div
+      fxFlex="45%"
+      fxFlex.xs="50%"
+      fxFlex.sm="50%"
+      *ngFor="let year of yearsList"
+      style="text-align: center"
+    >
+      <button class="button" (click)="setYear(year)">
+        {{ year }}
+      </button>
+    </div>
+  </div>
+  <div class="sub-heading">Successful Launch</div>
+  <div fxLayout="row wrap" fxLayoutGap="5px grid">
+    <div
+      fxFlex="45%"
+      fxFlex.xs="50%"
+      fxFlex.sm="50%"
+      style="text-align: center"
+    >
+      <button class="button" (click)="setLaunchStatus(true)">True</button>
+    </div>
+    <div
+      fxFlex="45%"
+      fxFlex.xs="50%"
+      fxFlex.sm="50%"
+      style="text-align: center"
+    >
+      <button class="button" (click)="setLaunchStatus(false)">False</button>
+    </div>
+  </div>
+
+  <div class="sub-heading">Successful Landing</div>
+  <div fxLayout="row wrap" fxLayoutGap="5px grid">
+    <div
+      fxFlex="45%"
+      fxFlex.xs="50%"
+      fxFlex.sm="50%"
+      style="text-align: center"
+    >
+      <button class="button" (click)="setLandStatus(true)">True</button>
+    </div>
+    <div
+      fxFlex="45%"
+      fxFlex.xs="50%"
+      fxFlex.sm="50%"
+      style="text-align: center"
+    >
+      <button class="button" (click)="setLandStatus(false)">False</button>
+    </div>
+  </div>
+</section>
