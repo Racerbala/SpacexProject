@@ -1,20 +1,7 @@
-<!-- <div class="flex-container">
-  <div fxLayout="row wrap" fxLayoutGap="16px grid">
-    <div fxFlex="100%" fxFlex.md="33%" fxFlex.sm="50%" class="flex-card-container">
-    <div class="count">{{missionDetails.length}}</div>
-    <div class="card-container" fxFlex="25%" *ngFor="let mission of missionDetails; let i = index"> -->
-
 <div class="cards">
   <div class="card" *ngFor="let mission of missionDetails; let i = index">
-    <!-- This content will take up 3/12 (or 1/4) of the container -->
     <app-card [image]="mission.image" [name]="mission.missionName" [missionId]="mission.missionId"
       [launchYear]="mission.launchYear" [launchSuccess]="mission.launchSuccess" [landSuccess]="mission.landSuccess"
       [index]="i"></app-card>
   </div>
 </div>
-
-
-
-<!-- </div>
-  </div>
-</div> -->
