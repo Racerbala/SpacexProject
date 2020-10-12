@@ -1,4 +1,4 @@
-.card-container {
+/* .card-container {
   width: 100%;
 }
 
@@ -7,7 +7,7 @@
   padding: 5px;
   flex-direction: row;
   flex-wrap: wrap;
-}
+} */
 
 /* @media screen and (max-width: 700px) {
   .flex-card-container {
@@ -17,15 +17,37 @@
     flex: 100%;
   }
 } */
+/* .flex-container {
+  display: flex;
+  flex-direction: row;
+} */
 
-.count {
-  color: white;
-  font-weight: 400;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  padding-top: 35px;
-  background-color: blueviolet;
-  border: 1px solid blueviolet;
+/* Responsive layout - makes a one column-layout instead of a two-column layout */
+/* @media (max-width: 700px) {
+  .flex-container {
+    flex-wrap: nowrap;
+  }
+} */
+.cards {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+}
+@media (min-width: 700px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .flex-container {
+    flex-direction: row;
+    flex: 50%;
+  }
 }
