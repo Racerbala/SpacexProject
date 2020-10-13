@@ -10,6 +10,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { CardComponent } from './card/card.component';
 import { LaunchService } from './services/launch.service';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { SideNavComponent } from './side-nav/side-nav.component';
     SideNavComponent,
     MainContentComponent,
     CardComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
